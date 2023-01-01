@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+   <title>Weather Journal by Eng. & Educator Osama Ghandour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="author" content="Osama Ghandour">
+ <meta name="keywords" content="jeson , JS , HTML , CSS , SERVER , Client, JavaScript"> 
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Weather Journal App</h1>
+      <div class="holder headline">Weather Journal App  by.Eng. Osama Ghandour</div>
+      <div class="holder zip">
+        <!-- <label for="zip">Please Enter Zipcode </label> -->
+        <input type="text" id="zip" placeholder="Please Enter Zipcode " />
+      
+      </div>
+      <div class="holder feel">
+        <!-- <label for="feelings">Can you write some words here?</label> -->
+        <textarea class="myInput" id="feelings" rows="9" cols="50" placeholder="How are you feeling today?"></textarea>
+        <button id="generate" type="submit">Generate</button>
+      </div>
+      <div id="entry">
+        <div class="title">Most Recent Entry</div>
+        <div id="entryHolder">
+          Date : <div id = "date"></div> 
+          Tempreture : <div id = "temp"></div>
+          Content : <div id = "content"></div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
